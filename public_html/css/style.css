@@ -1,0 +1,13 @@
+#listTable {
+ margin-top: 20px;
+}
+
+thead{
+     font-weight: bold; 
+}
+
+
+.inline-block {
+    display:inline-block;
+
+}

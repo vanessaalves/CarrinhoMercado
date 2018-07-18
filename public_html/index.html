@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="css/bootstrap.min.css">
+        <link rel ="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid ">
+                <div class="navbar-header">
+                    <a id="navTitle" class="navbar-brand" href="index.html"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+
+            <div class="form-inline">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="desc" placeholder="Descrição">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="amount" placeholder="Quantidade">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="value" placeholder="Valor">
+                </div>
+                <span id="btnUpdate" style="display: none">
+                    <span id="inputIDUpdate">
+                    </span>
+                    <button onclick="updateData();" class="btn btn-success">Salvar</button>
+                </span>
+                <span id="btnAdd">
+                    <button onclick="addData();" class="btn btn-success">Adicionar</button>
+                    <button onclick="resetForm();" class="btn btn-warning">Limpar</button> 
+                </span>
+            </div>
+            <div class="alert alert-danger" role="alert" style="display: none" id="errors">
+                <span class="sr-only"></span>
+            </div>
+            <table id="listTable" class="table text-justify"></table>
+
+            <div class="panel panel-default navbar-fixed-bottom ">
+                <div class="panel-body ">
+                    <h4 class="inline-block">Total Geral: <span id="totalValue"></span></h4>
+                    <button onclick="deleteList();" class="btn btn-danger pull-right ">Apagar Lista</button>
+                </div>
+            </div>
+
+            <script src="js/config.js"></script>
+            <script src="js/main.js"></script>
+    </body>
+</html>
